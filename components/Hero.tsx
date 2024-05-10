@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
 <section className="hero min-h-screen bg-cover bg-no-repeat bg-center md:min-h-0" style={{ backgroundImage: `url(/banner2.png)` }}>
 
       <div className="container mx-auto px-4 py-20 flex flex-col items-start justify-center h-full">
-        <h5 className="text-[13px] sm:text-[13px] md:text-[15px] lg:text-[17px]  text-grey-2 uppercase tracking-widest mt-10 mb-1">welcome to our store</h5>
+        <h5 className="text-[13px] sm:text-[13px] md:text-[14px] lg:text-[15px]  text-grey-2 uppercase tracking-widest mt-10 mb-1">welcome to our store</h5>
         <h1 className="max-w-[65%] text-[32px] sm:text-[34px] md:text-[38px] lg:text-[44px] font-custom font-black text-green1 mt-4 mb-4">
     Shop Our <br></br><span className="text-red-1 opacity 75">Ladies' </span>Collections
 </h1>
