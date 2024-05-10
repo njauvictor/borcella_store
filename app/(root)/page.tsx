@@ -1,4 +1,7 @@
+import ProductListByTag from "@/components/CategoryList";
+import ProductListByCategory from "@/components/CategoryList";
 import Collections from "@/components/Collections";
+import HeroSection from "@/components/Hero";
 import ProductList from "@/components/ProductList";
 
 import Image from "next/image";
@@ -6,7 +9,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Image src="/banner.png" alt="banner" width={2000} height={1000} className="w-screen" />
+    <HeroSection />
+  
       <Collections />
       <ProductList />
     </>

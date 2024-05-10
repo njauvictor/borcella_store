@@ -32,3 +32,13 @@ export const getRelatedProducts = async (productId: string) => {
   const relatedProducts = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products/${productId}/related`)
   return await relatedProducts.json()
 }
+
+export const getProductsByTag = async (tag: string) => {
+  const products = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products?tag=${tag}`);
+  return await products.json();
+};
+
+export const getProductsByCategory = async (category: string) => {
+  const products = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products?category=${category}`);
+  return await products.json();
+};
