@@ -10,7 +10,7 @@ function Footer() {
             <div>
          
             <Link href="/">
-                <Image src="/Online Duka (3).png" alt="logo" width={200} height={140} />
+                <Image src="/logo3.png" alt="logo" width={200} height={140} />
             </Link>
 
                 <ul className="mt-8 space-y-4">
