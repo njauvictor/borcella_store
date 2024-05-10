@@ -1,17 +1,14 @@
-import ProductListByTag from "@/components/CategoryList";
-import ProductListByCategory from "@/components/CategoryList";
+import React from "react";
 import Collections from "@/components/Collections";
 import HeroSection from "@/components/Hero";
 import ProductList from "@/components/ProductList";
 
-import Image from "next/image";
 
 export default function Home() {
   return (
     <>
     <HeroSection />
-  
-      <Collections />
+        <Collections />
       <ProductList />
     </>
   );

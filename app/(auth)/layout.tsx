@@ -1,15 +1,10 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Head from 'next/head';
 import "../globals.css";
 
 import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Online Duka - Store Auth",
-  description: "Next.js 14 Online Duka Ecommerce store",
-};
 
 export default function RootLayout({
   children,
@@ -18,9 +13,11 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" suppressHydrationWarning={true}>
-        <body className={inter.className}>{children}</body>
-      </html>
+      <Head>
+        <title>Online-Duka-Store</title>
+        <meta name="description" content="Next.js 14 Online Duka Ecommerce store" />
+      </Head>
+      <div className={inter.className}>{children}</div>
     </ClerkProvider>
   );
 }
