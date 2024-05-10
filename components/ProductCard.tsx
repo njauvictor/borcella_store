@@ -13,7 +13,7 @@ const ProductCard = ({ product, updateSignedInUser }: ProductCardProps ) => {
   return (
     <Link
       href={`/products/${product._id}`}
-      className="w-[320px] flex flex-col gap-2 mb-10 item"
+      className="w-[320px] flex flex-col gap-2 mb-10 item px-5"
     >
       <Image
         src={product.media[0]}
