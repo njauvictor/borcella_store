@@ -24,7 +24,7 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
         <HeartFavorite product={productInfo} />
       </div>
 
-      <div className="flex gap-2">
+      <div className="flex ">
         <p className="text-base-medium text-grey-2">Category:</p>
         <p className="text-base-bold">{productInfo.category}</p>
       </div>
