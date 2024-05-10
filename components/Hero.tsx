@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
       
         <div className="flex gap-4 mt-4">
         <button className="btn bg-green1 px-5 py-3 rounded-lg text-white">Shop Now</button>  
-        <button className="btn bg-red-1 opacity-70 px-5 py-3 rounded-lg text-white">Learn More</button> ```
+        <button className="btn bg-red-1 opacity-65 px-5 py-3 rounded-lg text-white">Learn More</button> ```
 
 
         </div>
