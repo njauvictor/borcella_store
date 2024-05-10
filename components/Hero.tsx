@@ -3,7 +3,7 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <section className="hero min-h-screen bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(/banner2.png)` }}>
-      <div className="container mx-auto px-5 sm:px-10 py-20 flex flex-col items-start justify-center h-full"> <h5 className="text-xs font-semibold text-grey opacity-60 uppercase tracking-widest leading-snug mt-8">Welcome to Our Store</h5>
+      <div className="container mx-auto px-5 sm:px-5 py-20 flex flex-col items-start justify-center h-full"> <h5 className="text-xs font-semibold text-grey opacity-60 uppercase tracking-widest leading-snug mt-8">Welcome to Our Store</h5>
 <div className="leading-snug mb-2">
   <h1 className="text-[42px] sm:text-[42px] md:text-[48px] lg:text-[48px] font-custom font-black text-green1 mt-4 mb-4">Shop Our <br></br> <span className="text-red-1 opacity-70" >Ladies</span> Collection</h1>
   
