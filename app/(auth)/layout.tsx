@@ -1,10 +1,17 @@
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Head from 'next/head';
-import "../globals.css";
-
 import { ClerkProvider } from "@clerk/nextjs";
 
+import "../globals.css";
+import Navbar from "@/components/Navbar";
+import ToasterProvider from "@/lib/providers/ToasterProvider";
+
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Online Duka",
+  description: "Online Duka",
+};
 
 export default function RootLayout({
   children,
@@ -12,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <Head>
-        <title>Online-Duka-Store</title>
-        <meta name="description" content="Next.js 14 Online Duka Ecommerce store" />
-      </Head>
-      <div className={inter.className}>{children}</div>
-    </ClerkProvider>
+    <html lang="en">
+      <body className={inter.className}>
+        <ClerkProvider>
+          <ToasterProvider />
+          <Navbar />
+          {children}
+        </ClerkProvider>
+      </body>
+    </html>
   );
 }

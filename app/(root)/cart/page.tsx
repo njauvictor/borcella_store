@@ -75,7 +75,7 @@ const Cart = () => {
 
         const encodedOrderDetails = encodeURIComponent(JSON.stringify(orderDetails));
 
-        const whatsappURL = `https://wa.me/${254748236146}?text=New order! Please review the details below:%0A%0A${cartItems.map(
+        const whatsappURL = `https://wa.me/${254729396862}?text=New order! Please review the details below:%0A%0A${cartItems.map(
           (item) => `* ${item.productName} - ${item.productUrl} (Qty: ${item.quantity}, Total: Ksh.${item.totalPrice})`
         ).join("%0A")}%0A%0AShipping Location: ${shippingLocation}%0APhone Number: ${phoneNumber}`;
 
